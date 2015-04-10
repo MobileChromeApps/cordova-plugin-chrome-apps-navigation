@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-registerManualTests('chrome-navigation', function(rootEl, addButton) {
+exports.defineManualTests = function(rootEl, addButton) {
   rootEl.innerHTML =
       '<center><b>Should be no-ops:</b><br><br>' +
       '<a href="http://www.google.com">plain link</a><br><br>' +
@@ -39,5 +39,5 @@ registerManualTests('chrome-navigation', function(rootEl, addButton) {
     el.src = 'assets/iframewnd.html';
     rootEl.appendChild(el);
   });
-});
+};
 

@@ -25,7 +25,7 @@ exports.defineManualTests = function(rootEl, addButton) {
     top.open('http://www.google.com');
   });
   addButton('window.open() from background (open browser)', function() {
-    var mobile = cordova.require('org.chromium.bootstrap.mobile.impl');
+    var mobile = cordova.require('cordova-plugin-chrome-apps-bootstrap.mobile.impl');
     mobile.bgWindow.window.open('http://www.google.com');
   });
   addButton('location = location', function() {

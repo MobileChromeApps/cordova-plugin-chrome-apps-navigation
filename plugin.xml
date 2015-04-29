@@ -13,8 +13,8 @@
 
   <name>Chrome Apps Navigation</name>
   <keywords>chrome,navigation</keywords>
-  <repo>https://github.com/MobileChromeApps/mobile-chrome-apps.git</repo>
-  <issue>https://github.com/MobileChromeApps/mobile-chrome-apps/issues</issue>
+  <repo>https://github.com/MobileChromeApps/cordova-plugin-chrome-apps-navigation.git</repo>
+  <issue>https://github.com/MobileChromeApps/cordova-plugin-chrome-apps-navigation/issues</issue>
 
   <platform name="android">
     <source-file src="src/android/ChromeNavigation.java" target-dir="src/org/chromium" />

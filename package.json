@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-chrome-apps-navigation",
-  "version": "1.0.3-dev",
+  "version": "1.0.3",
   "description": "This plugin contains the code used to intercept navigation within a Chrome app, and open links in the system browser instead.",
   "cordova": {
     "id": "cordova-plugin-chrome-apps-navigation",

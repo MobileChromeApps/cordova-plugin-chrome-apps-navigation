@@ -5,6 +5,9 @@ and open links in the system browser instead.
 
 # Release Notes
 
+## 1.0.4 (July 27, 2015)
+- Allow gopher: in URLs (http://crbug.com/513352)
+
 ## 1.0.3 (April 30, 2015)
 - Renamed plugin to pubilsh to NPM
 

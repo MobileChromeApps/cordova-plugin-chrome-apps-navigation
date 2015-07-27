@@ -31,7 +31,7 @@ public class ChromeNavigation extends CordovaPlugin {
         // Using shouldOverrideUrlLoading() would be much more convenient, but it gets triggered by iframe loads :(. 
         if ("onPageStarted".equals(id)) {
             String url = data.toString();
-            if (url.startsWith("chrome-extension:")) {
+            if (url.startsWith("chrome-extension:") || url.startsWith("gopher:")) {
                 if (prevUrl != null) {
                     // Assume this is someone refreshing via remote debugger.
                     Log.i(LOG_TAG, "location.reload() detected. Reloading via " + prevUrl);

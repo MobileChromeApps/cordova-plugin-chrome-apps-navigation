@@ -70,7 +70,7 @@ static NSString *stripFragment(NSString* url)
     if (isTopLevelNavigation) {
         [self stopTimer];
     } else {
-        if ([url.scheme isEqualToString:@"chrome-extension"]) {
+        if ([url.scheme isEqualToString:@"chrome-extension"] || [url.scheme isEqualToString:@"gopher"]) {
             // A Command-R in DevTools sets the mainDocumentURL as if it were a sub-resource load (ugh).
             // Poll for 1 second for a JS context reset to detect this case.
             if (_pageRefreshTimer == nil) {
@@ -92,7 +92,7 @@ static NSString *stripFragment(NSString* url)
 
         if ([prevURL isEqualToString:[url absoluteString]]) {
             // This will detect location.reload() or location = location, but not DevTools Command-R.
-            if ([url.scheme isEqualToString:@"chrome-extension"]) {
+            if ([url.scheme isEqualToString:@"chrome-extension"] || [url.scheme isEqualToString:@"gopher"]) {
                 [self performSelector:@selector(doReload) withObject:nil afterDelay:0.0];
                 return YES;
             }
